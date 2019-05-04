@@ -1,0 +1,20 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "noEmitOnError": false,
+    "removeComments": false,
+    "sourceMap": false,
+    "target": "es5",
+    "module": "umd",
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "outDir": "../wwwroot/js",
+    "types": ["jquery"]
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ],
+  "include": [ "../Scripts" ]
+}

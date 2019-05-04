@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container-pill">
+    <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home-calculator" role="tabpanel" aria-labelledby="v-pills-home-calculator-tab">
+            <div class="d-flex justify-content-center align-items-center screen-h">
+                <div class="spinner-border text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-home-tempconverter" role="tabpanel" aria-labelledby="v-pills--home-tempconverter-tab">
+            <div class="d-flex justify-content-center align-items-center screen-h">
+                <div class="spinner-border text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-home-about" role="tabpanel" aria-labelledby="v-pills-home-about-tab">
+            <div class="d-flex justify-content-center align-items-center screen-h">
+                <div class="spinner-border text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a data-page-load="home/_calculator" class="nav-link active" id="v-pills-home-calculator-tab" data-toggle="pill" href="#v-pills-home-calculator" role="tab" aria-controls="v-pills-home-calculator" aria-selected="true">Calculadora</a>
+        <a data-page-load="home/_temperatureConverter" class="nav-link" id="v-pills--home-tempconverter-tab" data-toggle="pill" href="#v-pills-home-tempconverter" role="tab" aria-controls="v-pills-home-tempconverter" aria-selected="false">Conversor</a>
+        <a data-page-load="home/_about" class="nav-link" id="v-pills-home-about-tab" data-toggle="pill" href="#v-pills-home-about" role="tab" aria-controls="v-pills-home-about" aria-selected="false">Sobre</a>        
+    </div>
+</div>

@@ -1,0 +1,152 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding: 0;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+    height: 100vh;
+    background-color: #666;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/* ===== Helpers
+   ================================
+*/
+.screen-h {
+    height: 100vh;
+}
+
+/* ===== Index 
+   ================================
+*/
+.container-pill {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+    .container-pill > .tab-content {
+        flex: 1;
+        background-color: #666;
+        color: #eee;
+    }
+
+    .container-pill > .tab-content > .tab-pane {
+        min-height: 100vh;
+    }
+
+    .container-pill > .nav {
+        width: auto;
+        background-color: #444;
+    }
+
+        .container-pill > .nav > .nav-link {
+            background-color: rgba(0,0,0,0);
+            color: #ddd;
+            border-radius: 0;
+            padding: 10px 15px;
+        }
+
+            .container-pill > .nav > .nav-link:hover {
+                background-color: rgba(0,0,0, .2);
+            }
+
+            .container-pill > .nav > .nav-link.active {
+                background-color: rgba(0,0,0, .5);
+            }
+
+
+#hostCalculator {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: .8em;
+}
+
+/*  ==== Calculator-UI
+    ===============================
+*/
+.calculator-ui {
+    display: inline-flex;
+    flex-direction: column;
+    width: 32em;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+    .calculator-ui .output {
+        background-color: rgba(0,0,0,.05);
+        color: #666;
+        font-size: 3em;
+        text-align: right;
+        padding: 20px;
+    }
+
+        .calculator-ui .output .linha {
+            color: currentColor;
+            min-height: 1.5em;
+            margin-bottom: .8em;
+        }
+
+            .calculator-ui .output .linha.l1 {
+                font-size: .8em;
+            }
+
+            .calculator-ui .output .linha.l2 {
+                font-size: 1em;
+            }
+
+    .calculator-ui .keyboard {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .calculator-ui .kb-btn {
+        border: none;
+        background-color: #ccc;
+        height: auto;
+        width: auto;
+        padding: 9% 0;
+        font-size: 2em;
+        flex: 1 0 25%;
+        transition: background-color .2s ease-in-out;
+    }
+
+        .calculator-ui .kb-btn:hover {
+            background-color: #bbb;
+        }
+
+        .calculator-ui .kb-btn.btn__w50 {
+            flex-basis: 37.5%;
+        }
